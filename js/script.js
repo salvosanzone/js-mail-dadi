@@ -55,9 +55,20 @@ console.log(player);
 const computer = Math.floor(Math.random() * 6) + 1;
 console.log(computer);
 
-//verifico chi ha il numero più alto
-if(player > computer && player != computer){
+//condizioni 
+if(player > computer){
   console.log('player ha vinto');
 }else{
   console.log('il computer ha vinto');
 }
+
+const game = document.getElementById('game');
+game.innerHTML = `player:${player}
+computer:${computer}
+`
+
+// if(player > computer) && (player != computer){
+// console.log('player ha vinto');
+// else if (computer > player) && (player != computer)
+// console.log('computer ha vinto');
+// }
