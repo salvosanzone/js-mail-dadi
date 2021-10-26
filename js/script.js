@@ -29,15 +29,16 @@ for(let i=0; i<emailList.length; i++){
 }
 
 //riferisco se l'email è: "email in lista" o "email non in lista"
+let checkList = '';
 if(emailInLista == true){
-  console.log('la tua email è in lista');
+  checkList = 'la tua email è in lista';
 }else{
-  console.log('la tua email non è in lista');
+  checkLIst = 'la tua email non è in lista';
 }
 
 //stampo il risultato della mia ricerca ossia: "trovata" o "non trovata"
 const mail = document.getElementById('mail');
-mail.innerHTML = `${emailInLista}`
+mail.innerHTML = `${checkList}`
 
 
 
@@ -49,22 +50,23 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto.
  */
 //numero random per il player
 const player = Math.floor(Math.random() * 6) + 1;
-console.log(player);
+console.log('giocata del player',player);
 
 //numero random per il computer
 const computer = Math.floor(Math.random() * 6) + 1;
-console.log(computer);
+console.log('giocata del computer',computer);
 
 //condizioni 
+let soluzione = '';
 if(player > computer){
-  console.log('player ha vinto');
+  soluzione = 'il player ha vinto'
 }else{
-  console.log('il computer ha vinto');
+  soluzione = 'il computer ha vinto'
 }
+console.log('soluzione',soluzione);
 
 const game = document.getElementById('game');
-game.innerHTML = `player:${player}
-computer:${computer}
+game.innerHTML = `${soluzione}
 `
 
 // if(player > computer) && (player != computer){
