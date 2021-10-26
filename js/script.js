@@ -66,7 +66,12 @@ if(player > computer){
 console.log('soluzione',soluzione);
 
 const game = document.getElementById('game');
-game.innerHTML = `${soluzione}
+game.innerHTML = 
+`
+Il numero del player è: ${player};
+Il numero del computer è: ${computer};
+Il risultato è: ${soluzione};
+
 `
 
 // if(player > computer) && (player != computer){
