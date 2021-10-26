@@ -29,7 +29,7 @@ for(let i=0; i<emailList.length; i++){
 }
 
 //riferisco se l'email è: "email in lista" o "email non in lista"
-if(emailInLista ==true){
+if(emailInLista == true){
   console.log('la tua email è in lista');
 }else{
   console.log('la tua email non è in lista');
@@ -39,3 +39,20 @@ if(emailInLista ==true){
 const mail = document.getElementById('mail');
 mail.innerHTML = `${emailInLista}`
 
+
+
+
+/**
+ Gioco dei dadi
+Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
+Stabilire il vincitore, in base a chi fa il punteggio più alto.
+ */
+//numero random per il player
+const player = Math.floor(Math.random() * 6) + 1;
+console.log(player);
+
+//numero random per il computer
+const computer = Math.floor(Math.random() * 6) + 1;
+console.log(computer);
+
+//verifico chi ha il numero più alto
